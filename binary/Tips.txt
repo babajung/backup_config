@@ -4,6 +4,22 @@ start cmd.exe /c py_backup_config_v4.exe -c command1-20.txt -i inventory1-10.csv
 start cmd.exe /c py_backup_config_v4.exe -c command1-20.txt -i inventory11-20.csv -u user1 -p pass1
 pause
 
+C:\>type command1-20.txt
+term len 0
+show clock
+show tech pass
+show clock
+
+C:\>type inventory1-10.csv
+FULLPATH,IP
+West/FL10/TA-FL10-2,100.124.0.1
+HQ/FL04/ZoneB/HQ-FL04B-2,100.124.0.2
+
+C:\>type inventory11-20.csv
+FULLPATH,IP
+West/FL10/TA-FL10-3,100.124.0.1
+HQ/FL04/ZoneB/HQ-FL04B-3,100.124.0.2
+
 C:\>parallel.cmd
 
 C:\>start cmd.exe /c py_backup_config_v4.exe -c command1-20.txt -i inventory1-10.csv -u netadmin -p P@ssw0rd
