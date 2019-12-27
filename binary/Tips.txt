@@ -1,0 +1,35 @@
+=========================================================================================================
+C:\>type parallel.cmd
+start cmd.exe /c py_backup_config_v4.exe -c command1-20.txt -i inventory1-10.csv -u user1 -p pass1
+start cmd.exe /c py_backup_config_v4.exe -c command1-20.txt -i inventory11-20.csv -u user1 -p pass1
+pause
+
+C:\>parallel.cmd
+
+C:\>start cmd.exe /c py_backup_config_v4.exe -c command1-20.txt -i inventory1-10.csv -u netadmin -p P@ssw0rd
+
+C:\>start cmd.exe /c py_backup_config_v4.exe -c command1-20.txt -i inventory11-20.csv -u netadmin -p P@ssw0rd
+
+C:\>pause
+Press any key to continue . . .
+
+C:\>tree /f backups
+Folder PATH listing
+Volume serial number is F307-1DB9
+C:\BACKUPS
+├───HQ
+│   └───FL04
+│       └───ZoneB
+│               HQ-FL04B-2.txt
+│               HQ-FL04B-3.txt
+│
+└───West
+    └───FL10
+            TA-FL10-2.txt
+            TA-FL10-3.txt
+
+
+C:\>
+
+
+=========================================================================================================
